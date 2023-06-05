@@ -13,6 +13,7 @@ var obj = JSON.parse(body); // JSON.parse()将json形式的body转变成对象�
 
 
 obj.data.userVipType= 1;
+obj.data.userVipType= ture;
 obj.data.VerifyStatus= 1;
 obj.data.expiredtime = 1894118400;
 obj.data.userVipLevel = 3;
