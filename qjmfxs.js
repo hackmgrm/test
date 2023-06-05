@@ -12,11 +12,11 @@ var body = $response.body; // 声明一个变量body并以响应消息体赋值
 var obj = JSON.parse(body); // JSON.parse()将json形式的body转变成对象处理
 
 
-obj.userVipType = 1;
-obj.isUserVip = ture;
-obj.VerifyStatus = 1;
-obj.expiredtime = 1894118400;
-obj.userVipLevel = 3;
+obj.data.userVipType = 1;
+obj.data.isUserVip = ture;
+obj.data.VerifyStatus = 1;
+obj.data.expiredtime = 1894118400;
+obj.data.userVipLevel = 3;
 
 
 body = JSON.stringify(obj); // 重新打包回json字符串
