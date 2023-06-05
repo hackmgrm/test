@@ -10,6 +10,6 @@ hostname = appi.qijizuopin.com
 */
 
 var body = $response.body
-    .replace(/\"data\":\{\"userVipType\":0,\"isUserVip\":false,\"userVipLevel\":0,\"verifyStatus\":0,\"createDate\":\"\",\"expiredTime\":\"\"\}/, "\"data\":{\"userVipType\":1,\"isUserVip\":true,\"userVipLevel\":3,\"verifyStatus\":1,\"createDate\":\"\",\"expiredTime\":1894118400}");
+    .replace(/\"data\":\{\"userVipType\":0,\"isUserVip\":false,\"userVipLevel\":0,\"verifyStatus\":0,\"createDate\":\"\",\"expiredTime\":\"\"\}/, "\"data\":{\"userVipType\":1,\"isUserVip\":true,\"userVipLevel\":3,\"verifyStatus\":1,\"createDate\":\"\",\"expiredTime\":1894118400\}");
 
 $done({ body });
