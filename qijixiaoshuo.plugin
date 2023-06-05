@@ -1,0 +1,11 @@
+#!name=奇迹免费小说
+#!desc=解锁会员
+#!homepage=https://ybnet.ga
+#!author=hackmgrm
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/kuwo.png
+
+[Mitm]
+hostname =*.qijizuopin.com
+
+[Script]
+http-response ^https?:\/\/appi\.qijizuopin\.com\/app_v1\/user\/vip\/getuserinfo) requires-body=1, script-path=qjxs.js, tag=奇迹小说会员
