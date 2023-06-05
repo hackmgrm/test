@@ -1,23 +1,15 @@
+/*
+奇迹免费小说
 
-//奇迹免费小说
+[rewrite_local]
+http-response ^https:\//appi.qijizuopin.com\/app_v1\/user\/vip\/getuserinfo url script-response-body https://raw.githubusercontent.com/hackmgrm/test/main/qjmfxs.js
 
-//console.log('测试写出日志'); //输出日志
+[MITM]
+hostname = appi.qijizuopin.com
 
-//$notification.post('title标题', 'subTitle子标题子标题子标题','body内容内容内容内容') //用于通知栏提醒
+*/
 
+var body = $response.body
+    .replace(/\"data\":\{\"userVipType\":0,\"isUserVip\":false,\"userVipLevel\":0,\"verifyStatus\":0,\"createDate\":\"\",\"expiredTime\":"\", "\"data\":\{\"userVipType\":1,\"isUserVip\":true,\"userVipLevel\":3,\"verifyStatus\":1,\"createDate\":\"\",\"expiredTime\":1894118400);
 
-
-
-var body = $response.body; // 声明一个变量body并以响应消息体赋值
-var obj = JSON.parse(body); // JSON.parse()将json形式的body转变成对象处理
-
-
-obj.data.userVipType = 1;
-obj.data.isUserVip = ture;
-obj.data.VerifyStatus = 1;
-obj.data.expiredtime = 1894118400;
-obj.data.userVipLevel = 3;
-
-
-body = JSON.stringify(obj); // 重新打包回json字符串
-$done({body}); // 结束修改
+$done({ body });
