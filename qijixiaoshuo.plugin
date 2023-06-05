@@ -8,4 +8,4 @@
 hostname =*.qijizuopin.com
 
 [Script]
-http-response ^https?:\/\/appi\.qijizuopin\.com\/app_v1\/user\/vip\/getuserinfo requires-body=1, script-path=https://raw.githubusercontent.com/hackmgrm/test/main/qjxs.js, tag=奇迹小说会员
+http-response ^https?:\/\/appi\.qijizuopin\.com\/app_v1\/user\/vip\/getuserinfo requires-body=1, script-path=https://raw.githubusercontent.com/hackmgrm/test/main/qjmfxs.js, tag=奇迹小说会员
