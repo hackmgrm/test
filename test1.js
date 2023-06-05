@@ -14,7 +14,8 @@ var obj = JSON.parse(body); // JSON.parse()将json形式的body转变成对象�
 
 obj.data.userVipType= 1;//修改为true
 obj.data.VerifyStatus= 1;//修改为true
-obj.data.expiredtime = "";
+obj.data.expiredtime = "1894118400";
+obj.data.userVipLevel = 3;
 
 
 body = JSON.stringify(obj); // 重新打包回json字符串
