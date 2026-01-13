@@ -1,6 +1,6 @@
 #!name=账户状态查询
-#!desc=查询
-#!author=Copilot
+#!desc=和谐帐户系统查询
+#!author=hackmgrm
 #!icon=https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chart-candlestick.svg
 
 [Script]
