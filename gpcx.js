@@ -11,7 +11,6 @@ let obj = {
   "darkhorse_switch": "1",
   "stocknotice_switch": "1",
   "latesDate": "2028-01-13",          // ← 改这里，建议每年更新一次
-  "userNo": "2307776"                 // 如果 App 不校验，可保留；否则可删掉或随机
 };
 
 $done({body: JSON.stringify(obj)});
