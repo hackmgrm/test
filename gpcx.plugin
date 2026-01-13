@@ -1,7 +1,7 @@
 #!name=账户状态查询
 #!desc=查询
 #!author=Copilot
-#!icon=https://raw.githubusercontent.com/bytedance/IconPark/master/source/Money/financing.svg
+#!icon=https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chart-candlestick.svg
 
 [Script]
 http-response ^https:\/\/stock\.53site\.com\/RecommendStock\/v3\.5\.4\/adduser\.php requires-body=1,script-path=https://raw.githubusercontent.com/hackmgrm/test/refs/heads/main/gpcx.js, tag=StockUserCheck
