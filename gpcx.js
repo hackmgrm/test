@@ -10,7 +10,7 @@ let obj = {
   "apns_switch": "1",
   "darkhorse_switch": "1",
   "stocknotice_switch": "1",
-  "latesDate": "2028-01-13",          // ← 改这里，建议每年更新一次
+  "latesDate": "2018-01-13",          // ← 改这里，建议每年更新一次
 };
 
 $done({body: JSON.stringify(obj)});
